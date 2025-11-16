@@ -1,0 +1,49 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.254:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+
+  A new version of Streamlit is available.
+
+  See what's new at https://discuss.streamlit.io/c/announcements
+
+  Enter the following command to upgrade:
+  $ pip install streamlit --upgrade
+
+2025-11-14 18:09:46.509 Uncaught app exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 542, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/sailesh/Desktop/Assignment-2/PROG_ASSIGN2_XXXXX_YYYYYY/frontend/streamlit_app.py", line 497, in <module>
+    main()
+  File "/Users/sailesh/Desktop/Assignment-2/PROG_ASSIGN2_XXXXX_YYYYYY/frontend/streamlit_app.py", line 489, in main
+    render_notes_dashboard(token)
+  File "/Users/sailesh/Desktop/Assignment-2/PROG_ASSIGN2_XXXXX_YYYYYY/frontend/streamlit_app.py", line 422, in render_notes_dashboard
+    with st.modal(f"Delete note #{display_number}"):
+         ^^^^^^^^
+AttributeError: module 'streamlit' has no attribute 'modal'
+2025-11-14 18:19:41.400 Uncaught app exception
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 542, in _run_script
+    exec(code, module.__dict__)
+  File "/Users/sailesh/Desktop/Assignment-2/PROG_ASSIGN2_XXXXX_YYYYYY/frontend/streamlit_app.py", line 515, in <module>
+    main()
+  File "/Users/sailesh/Desktop/Assignment-2/PROG_ASSIGN2_XXXXX_YYYYYY/frontend/streamlit_app.py", line 507, in main
+    render_notes_dashboard(token)
+  File "/Users/sailesh/Desktop/Assignment-2/PROG_ASSIGN2_XXXXX_YYYYYY/frontend/streamlit_app.py", line 440, in render_notes_dashboard
+    with st.modal(f"Delete note #{display_number}"):
+         ^^^^^^^^
+AttributeError: module 'streamlit' has no attribute 'modal'
+2025-11-15 14:50:52.992 Please replace `st.experimental_rerun` with `st.rerun`.
+
+`st.experimental_rerun` will be removed after 2024-04-01.
+2025-11-15 14:52:17.598 Please replace `st.experimental_rerun` with `st.rerun`.
+
+`st.experimental_rerun` will be removed after 2024-04-01.
